@@ -47,6 +47,24 @@ Urutan kerja sistem:
 8. **Sistem berhenti**  
    Program menghentikan seluruh pergerakan motor secara otomatis setelah proses selesai.
 
+Nilai jumlah langkah perlu dikalibrasi kembali sesuai dengan motor stepper, microstepping driver, mekanisme transmisi, dan jarak gerak aktual perangkat.
+
+## Cara Menjalankan
+
+1. Buka file `bg4kali.ino` menggunakan **Arduino IDE**.
+2. Pilih jenis **board** dan **port** yang sesuai.
+3. Hubungkan Arduino dengan driver motor stepper sesuai konfigurasi sistem.
+4. Upload program ke board Arduino.
+5. Buka **Serial Monitor** dengan baud rate `9600`.
+6. Sistem akan menjalankan proses pemindaian secara otomatis.
+
+## Catatan
+
+- Pastikan driver motor menggunakan **catu daya eksternal** yang sesuai.
+- Hubungkan **ground Arduino** dengan **ground driver motor**.
+- Periksa arah pergerakan motor sebelum menjalankan perangkat secara penuh.
+- Gunakan **limit switch** untuk mencegah pergerakan melewati batas mekanis.
+- Parameter `step10Deg`, jarak vertikal, dan posisi awal perlu divalidasi melalui **kalibrasi perangkat**.
 
 ## Parameter Utama
 
@@ -58,3 +76,5 @@ Parameter utama yang digunakan dalam sistem meliputi:
 #define stepFor2cm 6400
 #define step10Deg 640
 #define stepFor6cm 12800
+
+
