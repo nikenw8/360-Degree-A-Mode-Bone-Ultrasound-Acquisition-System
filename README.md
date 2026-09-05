@@ -39,7 +39,7 @@ Parameter utama yang digunakan dalam sistem meliputi:
 #define step10Deg 640
 #define stepFor6cm 12800
 
-## Alur Sistem
+### Alur Sistem
 
 Sistem menjalankan proses pemindaian secara otomatis melalui koordinasi tiga motor stepper. Motor 1 digunakan untuk mengatur gerakan rotasi pemindaian, sedangkan Motor 2 dan Motor 3 digunakan untuk mengatur pergerakan vertikal dudukan transduser.
 
@@ -61,3 +61,9 @@ Urutan kerja sistem:
    Setelah seluruh siklus selesai, Motor 2 dan Motor 3 bergerak turun untuk mengembalikan dudukan transduser.
 8. **Sistem berhenti**  
    Program menghentikan seluruh pergerakan motor secara otomatis setelah proses selesai.
+
+## Dokumentasi Kegiatan
+
+Video dokumentasi proses perancangan dan pengujian sistem dapat dilihat melalui tautan berikut:
+
+**Video:** [Dokumentasi Kegiatan dan Pengujian Sistem](https://www.youtube.com/watch?v=g-s9wTPwNNM)
